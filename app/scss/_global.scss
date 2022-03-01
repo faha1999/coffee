@@ -31,7 +31,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: var(--bg);
+  background: $bg;
 }
 
 section {
@@ -46,7 +46,7 @@ section {
   font-size: 4rem;
 
   span {
-    color: var(--main-color);
+    color: $main-color;
     text-transform: uppercase;
   }
 }
@@ -57,7 +57,7 @@ section {
   padding: 0.9rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background: var(--main-color);
+  background: $main-color;
   cursor: pointer;
 
   &:hover {
