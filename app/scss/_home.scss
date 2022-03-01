@@ -1,0 +1,43 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    max-width: 60rem;
+
+    h3 {
+      font-size: 6rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8;
+      padding: 1rem 0;
+      color: #eee;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+
+    .content {
+      h3 {
+        font-size: 4.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
