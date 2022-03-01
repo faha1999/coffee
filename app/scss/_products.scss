@@ -1,0 +1,61 @@
+.products {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      text-align: center;
+      border: $border;
+      padding: 2rem;
+
+      .icons a {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        border: $border;
+        color: #fff;
+        margin: 0.3rem;
+
+        &:hover {
+          background: $main-color;
+        }
+      }
+
+      .image {
+        padding: 2.5rem 0;
+
+        img {
+          height: 25rem;
+        }
+      }
+
+      .content {
+        h3 {
+          color: #fff;
+          font-size: 2.5rem;
+        }
+
+        .stars {
+          padding: 1.5rem;
+          i {
+            font-size: 1.7rem;
+            color: $main-color;
+          }
+        }
+
+        .price {
+          color: #fff;
+          font-size: 2.5rem;
+
+          span {
+            text-decoration: line-through;
+            font-weight: lighter;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
