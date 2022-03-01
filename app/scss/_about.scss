@@ -2,7 +2,7 @@
   .row {
     display: flex;
     align-items: center;
-    background: var(--black);
+    background: $black;
     flex-wrap: wrap;
 
     .image {
