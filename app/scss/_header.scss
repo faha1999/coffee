@@ -4,12 +4,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 7%;
-  border-bottom: $border;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+
+  &.active-border {
+    border-bottom: $border;
+    box-shadow: rgba(211, 173, 127, 0.3) -4px 9px 25px -6px;
+  }
 
   .logo img {
     height: 6rem;
@@ -21,6 +25,7 @@
       font-size: 1.6rem;
       color: #fff;
 
+      &.active,
       &:hover {
         color: $main-color;
         border-bottom: 0.1rem solid $main-color;
@@ -85,6 +90,7 @@
     width: 35rem;
     background: #fff;
     padding: 0 1.5rem;
+    transition: 0.7s ease;
 
     &.active {
       right: 0;
